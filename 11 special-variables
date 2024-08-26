@@ -1,4 +1,10 @@
 #!/bin/bash
 
 echo "all variable passed to the script: $@"
+echo "$#"
+echo "$0"
+echo "$PWD"
+echo "$HOME"
+echo "$$"
+sleap 100 &
 echo "$!"

@@ -4,4 +4,4 @@ number=$2
 
 sum=$(($number1+$number2))
 
-echo "totalof $nunber1 and $number2 is $sum
+echo "totalof $nunber1 and $number2 is $sum"

@@ -1,0 +1,6 @@
+#!/bin/bash
+number=$1
+number=$2
+
+sum=$number1+$number2
+echo "total or $number1 and $number2 is: $sum"

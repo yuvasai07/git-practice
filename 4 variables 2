@@ -1,0 +1,9 @@
+#!/bin/bash
+
+person1=$1
+person2=$2
+
+echo "$person1:: hi how r u bro"
+echo "$person2:: i am fine bro"
+echo "$person1:: did u had u r lunch"
+echo "$person2:: ya i had my ha lunch"

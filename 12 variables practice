@@ -3,5 +3,5 @@ PERSON1=yuvasi
 PERSON2=pandu
 echo "$PERSON1 hi bro how r u $PERSON2 i am fine"
 echo "$PERSON2 what r u doing bro $PERSON1 notting bro"
-echo $PERSON1 what about you bro $PERSON2 i am learnig devops bro"
+echo "$PERSON1 what about you bro $PERSON2 i am learnig devops bro"
 echo "$PERSON1 oh ok see u tomarrow $PERSON2 ok catch up tomarrow"

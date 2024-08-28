@@ -4,4 +4,4 @@ read USERNAME
 echo "user name entred is :: $USERNAME"
 echo "please enter your password::"
 read PASSWORD
-echo "password  entred is :: $password"
+echo "password  entred is :: $PASSWORD"

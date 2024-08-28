@@ -1,6 +1,6 @@
 #!/bin/bash
 FRUITS=("apple" "orange" "mango")
-echo "fruit first is:{$FRUITS[0]}"
-echo "fruit second is:{$FRUITS[1]}"
-echo "fruit third is:{$FRUITS[2]}"
-echo "i need all fruits:{$FRUITS[@]}"
+echo "fruit first is: ${FRUITS[0]}"
+echo "fruit second is: ${FRUITS[1]}"
+echo "fruit third is: ${FRUITS[2]}"
+echo "i need all fruits: ${FRUITS[@]}"

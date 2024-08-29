@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash#!/bin/bash
 USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
@@ -19,22 +19,16 @@ VALIDATE(){
         echo -e "$2 is $G success $Ns"
     fi
 }
-dnf list installed git
+CHECK_ROOT
+for PACKAGE in $@
+do
+  dnf list installed $PACKAGE
 if [ $? -ne 0 ]
 then 
-    echo "git is not installed .going to install it"
-    dnf install git -y
+    echo "$PACKAGE is not installed .going to install it"
+    dnf install $PACKAGE -y
     VALIDATE $? "installing it"
 else
-    echo  "git is already installed sucess . nothing do"
+    echo  "$PACKAGE is already installed sucess . nothing do"
 fi    
-dnf list installed msql
-if [ $? -ne 0 ]
-then 
-    echo" mysql is not installed .going to install it"
-    dnf install mysql -y
-    VALIDATE $? "installin it"
-else
-    echo "mysql is already installed.nothing to do"
-fi    
-
+done

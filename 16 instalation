@@ -30,7 +30,7 @@ then
     dnf instal mysql -y
     if [ $? -ne 0 ]
     then 
-        echo "mysql instaleation is filed"
+        echo "mysql installation is filed . check it"
         exit 1
     else
         echo "mysql instalation sucess"

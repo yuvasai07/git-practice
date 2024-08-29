@@ -16,7 +16,7 @@ VALIDATE(){
         echo -e "$2 is $R failed $N"
         exit 1
     else
-        echo -e "$2 is $G success $N"
+        echo -e "$2 is $G success $Ns"
     fi
 }
 dnf list installed git
@@ -28,7 +28,7 @@ then
 else
     echo  "git is already installed sucess . nothing do"
 fi    
-dnf list installed msql
+dnf list installed msqllll
 if [ $? -ne 0 ]
 then 
     echo" mysql is not installed .going to install it"

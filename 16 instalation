@@ -1,0 +1,25 @@
+#!/bin/bash
+ 
+USERID=$(id -u)
+
+if [ $USERID -ne 0 ]
+then
+    echo "please run the script with root privelages"
+    exit 1
+fi
+dnf list installed git
+if [ $? -ne 0 ]
+then 
+     echo "git is not installed .going to instal it"
+     dnf instal mysql -y
+    if [ $? -ne 0 ]
+    then 
+        echo "mysql instaletion is failed"
+        exit 1
+    else
+        echo "mysql is installed sucess"
+    fi
+else 
+    echo "mysql installed sucessfully .nothing to do"
+fi              
+    
